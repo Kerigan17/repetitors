@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h2 {
+    font-size: 36px;
+}
+header {
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #242530;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 137px;
+}
+.header__action a{
+    display: flex;
+    text-decoration: none;
+    color: #242530;
+    border: 1px solid #242530;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.header__action a:hover {
+    background-color: #24253036;
+}
+.header__menu ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.header__menu a {
+    color: #242530;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s;
+}
+.header__menu a.active {
+    background-color: #242530;
+    color: #fff;
+}
+.header__menu a:hover:not(.active) {
+    background-color: #2425301e;
+}
+.prev {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.prev__frame{
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(#242530b2, #242530b2), url(./img/bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.prev__title {
+    font-size: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.prev__desc {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.prev__btn a{
+    text-decoration: none;
+    background-color: #242530;
+    color: #242530;
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .2s;
+}
+.prev__btn a:hover {
+    background-color: #ffffffc4;
+}
+
+.people .container {
+    display: flex;
+    gap: 50px;
+    padding: 100px;
+    align-items: center;
+}
+.people__left {
+    background: url(./img/learning.png);
+    background-size: cover;
+    border-radius: 20px;
+    color: white;
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+}
+.people__title {
+    margin-bottom: 20px;
+}
+.people__right {
+    display: flex;
+    flex-direction: column;
+}
+.people__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.people__text {
+    margin-bottom: 30px;
+    border-left: 3px solid #242530;
+    padding-left: 20px;
+}
+.people__list ul{
+    list-style: none;
+}
+.people__list li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.people__list li::before {
+    content: url('./img/learn.svg');
+    width: 20px;
+    height: 20px;
+}
+.courses {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.courses__title {
+    margin-bottom: 20px;
+}
+.courses__text {
+    max-width: 500px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border-left: 3px solid #242530;
+    text-align: justify;
+}
+.courses__cards {
+    display: flex;
+    justify-content: space-between;
+}
+.courses__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242530;
+    padding: 20px;
+    color: white;
+
+}
+.courses__img {
+    width: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.courses__img img {
+    width: 100%;
+}
+.courses__name {
+    max-width: 60%;
+}
+.courses__card {
+    width: 30%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #242530;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+.courses__desc {
+    padding: 30px;
+    font-size: 14px;
+    text-align: justify;
+    min-height: 222px;
+}
+.courses__btns {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.courses__btns a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #242530;
+    transition: .3s;
+    color: #242530;
+    background-color: #ffffff;
+}
+.courses__more {
+    color: white;
+    background-color: #242530;
+}
+.courses__btns a:hover {
+    color: white;
+    background-color: #242530;
+}
+.choice .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+}
+.choice__img {
+    background-image: url(./img/choice.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    flex-shrink: 0;
+    height: 500px;
+    border-radius: 20px;
+}
+.choice__title {
+    margin-bottom: 30px;
+}
+.choice__desc {
+    padding-left: 20px;
+    border-left: 3px solid #242530;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.choice__list {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.choice__list span {
+    font-weight: 900;
+}
+.choice__list li {
+    margin-bottom: 5px;
+}
+.chouce__btn a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: #242530;
+    border: 1px solid #242530;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.teachers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.teachers__title {
+    margin-bottom: 30px;
+}
+.teachers .container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.teachers__card {
+    border: 1px solid #242530;
+    border-radius: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    background-color: #242530;
+    flex-shrink: 0;
+    min-height: 347px;
+}
+.teachers__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.teachers__skills > div {
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.teachers__skills .python {
+    border: 1px solid rgb(13, 104, 13);
+    background-color: rgb(26, 206, 26);
+}
+.teachers__skills .web {
+    background-color: palevioletred;
+    border: 1px solid rgb(219, 11, 80);
+}
+.teachers__skills .unity {
+    border: 1px solid rgb(34, 21, 65);
+    background-color: rgb(85, 52, 161);
+}
+.teachers__photo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #242530;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.teachers__photo.one{
+    background-image: url(./img/teacher_1.png);
+    background-size: cover;
+    background-position: center;
+}
+.teachers__photo.two{
+    background-image: url(./img/teacher_2.png);
+    background-size: cover;
+    background-position: center;
+}
+.teacher__name {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.teachers__bottom {
+    padding: 20px;
+    color: white;
+}
+.teacher__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.teachers__aboute {
+    padding-left: 20px;
+    border-left: 3px solid #242530;
+}
+.teachers__aboute p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.feedback {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.feedback__title {
+    margin-bottom: 30px;
+}
+.feedback__card {
+    border: 1px solid #242530;
+    border-radius: 20px;
+}
+.feedback__header {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #242530;
+    padding: 20px;
+}
+.feedback__img {
+    width: 80px;
+    height: 80px;
+    background-color: #242530;
+    border-radius: 50%;
+}
+.feedback__text {
+    padding: 20px;
+}
+.feedback__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.feedback__date {
+    margin-bottom: 10px;
+}
+.feedback__stars img {
+    width: 20px;
+    height: 20px;
+}
+.feedback__card {
+    height: 85%;
+}
+.swiper-pagination-bullet-active {
+    background-color: #242530;
+}
+
+.swiper {
+    width: 100%;
+    height: 350px;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Ширина вертикального скроллбара */
+    height: 12px; /* Высота горизонтального скроллбара */
+}
+
+::-webkit-scrollbar-track {
+    background: #24253025; /* Цвет фона трека */
+    border-radius: 10px; /* Закругление углов трека */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242530; /* Цвет ползунка */
+    border-radius: 10px; /* Закругление углов ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет ползунка при наведении */
+}

@@ -1,0 +1,5 @@
+# Игнорировать node_modules в папке frontend
+frontend/node_modules/
+
+# Игнорировать node_modules в папке backend
+backend/node_modules/

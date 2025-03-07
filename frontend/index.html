@@ -76,7 +76,7 @@
                             Курс для творческих ребят, которые увлекаются программами и играми. Мы изучим циклы, условия, основные понятия и более сложные конструкции, а также научимся создавать программы/игры. Python - хороший старт благодаря его компактному и интуитивно понятному коду.
                         </p>
                         <div class="courses__btns">
-                            <a class="courses__more" href="#">Подробнее</a>
+                            <a class="courses__more" href="./python.html" target="_blank">Подробнее</a>
                             <a class="courses__send sign_up">Записаться</a>
                         </div>
                     </div>
@@ -303,7 +303,14 @@
     <footer>
         <div class="container">
             <div class="footer__social">
-
+                <a href="https://t.me/alex_malko_17" class="footer__telegram">
+                    <img src="./img/telegram.svg" alt="">
+                    <p>Telegram</p>
+                </a>
+                <a href="https://wa.me/375336676888?text=Здравствуйте, я хочу записать на курс" class="footer__whatsapp">
+                    <img src="./img/whatsapp.svg" alt="">
+                    <p>Whatsapp</p>
+                </a>
             </div>
             <div class="footer__date">2025 ©</div>
         </div>
@@ -314,14 +321,29 @@
             <h2 class="popup__title">Заполните форму</h2>
             <div class="popup__close" id="popup__close"><img src="./img/close.svg" alt="close"></div>
             <form action="#" id="contactForm">
-                <label for="">Контактные данные</label>
+                <label>Контактные данные</label>
                 <input type="text" placeholder="Ваше имя" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            
                 <input type="text" placeholder="Номер whatsapp или telegram" name="contact" required>
-                <label for="">Данные ученика</label>
+                <span class="error-message" id="contactError"></span>
+            
+                <label>Данные ученика</label>
                 <input type="text" placeholder="Имя ученика" name="studentName" required>
+                <span class="error-message" id="studentNameError"></span>
+            
                 <input type="text" placeholder="Возраст" name="age" required>
-                <button>Отправить</button>
+                <span class="error-message" id="ageError"></span>
+            
+                <button type="submit">Отправить</button>
             </form>
+        </div>
+    </div>
+
+    <div class="popup success" id="popupSuccess">
+        <div class="popup__block">
+            <h2>Ваша заявка успешно отправлена</h2>
+            <button id="popupSuccessBtn">Закрыть</button>
         </div>
     </div>
 

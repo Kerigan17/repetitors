@@ -1,22 +1,8 @@
-//swipper js
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: true,
-    },
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
 //popup
 const popup = document.getElementById('popup');
 const popupClose = document.getElementById('popup__close');
+const popupSuccess = document.getElementById('popupSuccess');
+const popupSuccessBtn = document.getElementById('popupSuccessBtn');
 const signUpsBtns = Array.from(document.getElementsByClassName('sign_up'));
 const body = document.body;
 
@@ -24,19 +10,18 @@ const body = document.body;
 signUpsBtns.forEach((item) =>{
     item.onclick = () => {
         popup.classList.add('active');
-        // body.style.overflow = 'hidden';
     }
 });
 // закрытие на крестик
 popupClose.onclick = () => {
     popup.classList.remove('active');
-    // body.style.overflow = '';
+    removeRedBorder()
 } 
 //закртие на фон
 popup.onclick = (event) => {
     if (event.target === popup) {
         popup.classList.remove('active');
-        // body.style.overflow = '';
+        removeRedBorder()
     }
 }
 
@@ -83,6 +68,17 @@ menuLinks.forEach(link => {
 });
 
 // отправка формы
+const formInputs = document.querySelectorAll('#contactForm input');
+function removeRedBorder() {
+  formInputs.forEach(input => {
+    input.classList.remove('touched');
+  })
+}
+formInputs.forEach(input => {
+  input.addEventListener('blur', () => {
+      input.classList.add('touched');
+  });
+});
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -100,11 +96,32 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 
       const result = await response.json();
       if (response.ok) {
-          alert(result.message);
+          popup.classList.remove('active');
+          popupSuccess.classList.add('active');
       } else {
           alert(result.error);
       }
   } catch (error) {
       alert('Ошибка при отправке формы');
   }
+});
+
+popupSuccessBtn.onclick = () => {
+  popupSuccess.classList.remove('active');
+}
+
+//swipper js
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+  },
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
 });

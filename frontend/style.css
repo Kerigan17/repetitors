@@ -437,11 +437,18 @@ header .container {
 footer {
     padding-top: 100px;
     height: 100px;
+    padding-bottom: 50px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .swiper-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 12px;
 }
 .swiper-pagination-bullet {
     transition: .3s;
@@ -522,15 +529,69 @@ footer {
     border: 1px solid #242530;
     transition: .3s;
 }
+input.touched:invalid {
+    border: 1px solid red;
+}
 
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+
+input.touched:invalid + .error-message {
+    display: block;
+}
 .popup button:hover {
     cursor: pointer;
     background-color: #ffffffbb;
     color: #242530;
     border: 1px solid #242530;
 }
-
-
+.popup.success {
+    background-color: #2425307c;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popup.success.active {
+    display: flex;
+}
+.popup__block {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+.popup.success h2 {
+    width: 400px;
+}
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+.footer__social > a {
+    display: flex;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+.footer__social img {
+    width: 20px;
+}
+.footer__telegram {
+    border: 2px solid #242530;
+    color: #242530;
+}
+.footer__whatsapp {
+    border: 2px solid #7AD06D;
+    color: #7AD06D;
+}
 
 
 

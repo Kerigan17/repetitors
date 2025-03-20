@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__logo">
+                <img src="" alt="">
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../index.html#people">Преимущества</a></li>
+                    <li><a href="../index.html#courses">Курсы</a></li>
+                    <li><a href="../index.html#choice">Пробное</a></li>
+                    <li><a href="../index.html#teachers">Преподаватели</a></li>
+                    <li><a href="../index.html#feedback">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="header__action">
+                <a class="sign_up">Записаться</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="preview">
+            <div class="container">
+                <div class="preview__card">
+                    <div class="preview__left">
+                        <h1 class="preview__title">Программирование на Python</h1>
+                        <p class="preview__description">
+                            Python — это современный и простой в изучении язык программирования, который используется для создания программ, сайтов, игр, анализа данных и даже в робототехнике. Его часто выбирают для обучения детей, потому что он имеет понятный и лаконичный синтаксис, похожий на обычный язык.
+                        </p>
+                        <a href="#" class="preview__btn">Темы курса</a>
+                    </div>
+                    <div class="preview__right">
+                        <img src="../img/python.png" alt="Python image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="utility">
+            <div class="container">
+                <h2 class="utility__title">Почему Python?</h2>
+                <div class="utility__cards">
+                    <div class="utility__card">
+                        <div class="utility__number">1</div>
+                        <div class="utility__name">Простота и доступность</div>
+                        <div class="utility__text">
+                            Python имеет понятный и лаконичный синтаксис, что делает его идеальным для начинающих, включая детей. Это позволяет быстро освоить основы программирования.
+                        </div>
+                    </div>
+                    <div class="utility__card">
+                        <div class="utility__number">2</div>
+                        <div class="utility__name">Широкое применение</div>
+                        <div class="utility__text">
+                            Python используется в самых разных областях: веб-разработка, анализ данных, искусственный интеллект, машинное обучение, автоматизация задач, создание игр и даже робототехника.
+                        </div>
+                    </div>
+                    <div class="utility__card">
+                        <div class="utility__number">3</div>
+                        <div class="utility__name">Развитие логического мышления</div>
+                        <div class="utility__text">
+                            Изучение Python помогает развивать логику, алгоритмическое мышление и умение решать задачи, что полезно не только в программировании, но и в повседневной жизни.
+                        </div>
+                    </div>
+                    <div class="utility__card">
+                        <div class="utility__number">4</div>
+                        <div class="utility__name">Большое сообщество и ресурсы</div>
+                        <div class="utility__text">
+                            У Python огромное сообщество разработчиков, а в интернете множество бесплатных курсов, учебников и видеоуроков, что делает обучение удобным и доступным.
+                        </div>
+                    </div>
+                    <div class="utility__card">
+                        <div class="utility__number">5</div>
+                        <div class="utility__name">Перспективы для будущего</div>
+                        <div class="utility__text">
+                            Python — один из самых популярных языков программирования в мире. Его знание открывает двери к востребованным профессиям в IT, таких как Data Scientist, разработчик ПО или аналитик данных.
+                        </div>
+                    </div>
+                    <div class="utility__card">
+                        <div class="utility__number">6</div>
+                        <div class="utility__name">Творчество и эксперименты</div>
+                        <div class="utility__text">
+                            С помощью Python можно создавать собственные проекты: от простых игр и чат-ботов до сложных приложений. Это вдохновляет на творчество и позволяет сразу видеть результаты своей работы.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="themes">
+            <div class="container">
+                <h2 class="themes__title">Программа курса</h2>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup__form">
+            <h2 class="popup__title">Заполните форму</h2>
+            <div class="popup__close" id="popup__close"><img src="../img/close.svg" alt="close"></div>
+            <form action="#" id="contactForm">
+                <label>Контактные данные</label>
+                <input type="text" placeholder="Ваше имя" name="name" required>
+                <span class="error-message" id="nameError"></span>
+
+                <input type="text" placeholder="Номер whatsapp или telegram" name="contact" required>
+                <span class="error-message" id="contactError"></span>
+
+                <label>Данные ученика</label>
+                <input type="text" placeholder="Имя ученика" name="studentName" required>
+                <span class="error-message" id="studentNameError"></span>
+
+                <input type="text" placeholder="Возраст" name="age" required>
+                <span class="error-message" id="ageError"></span>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup success" id="popupSuccess">
+        <div class="popup__block">
+            <h2>Ваша заявка успешно отправлена</h2>
+            <button id="popupSuccessBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="../popup.js"></script>
+</body>
+</html>

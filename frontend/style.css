@@ -596,6 +596,7 @@ input.touched:invalid + .error-message {
 
 .preview {
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 .preview__card {
     display: flex;
@@ -626,8 +627,47 @@ input.touched:invalid + .error-message {
 .preview__btn:hover {
     background-color: #ffffffc4;
 }
-
-
+.utility {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.utility__title {
+    margin-bottom: 50px;
+}
+.utility__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.utility__card {
+    width: 30%;
+    border: 1px solid #242530;
+    color: #242530;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.utility__number {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #242530;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    background: #242530;
+    color: #fff;
+}
+.utility__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 
 
 

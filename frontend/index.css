@@ -345,16 +345,7 @@
 .feedback__card {
     height: 85%;
 }
-footer {
-    padding-top: 100px;
-    height: 100px;
-    padding-bottom: 50px;
-}
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .swiper-pagination {
     display: flex;
     align-items: center;

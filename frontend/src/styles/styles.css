@@ -45,6 +45,7 @@ header {
     width: 100%;
     background-color: #fff;
     border-bottom: 1px solid #242530;
+    z-index: 2;
 }
 header .container {
     display: flex;
@@ -85,6 +86,41 @@ header .container {
 }
 .header__menu a:hover:not(.active) {
     background-color: #2425301e;
+}
+footer {
+    border-top: 1px solid #242530;
+    padding: 20px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+.footer__social > a {
+    display: flex;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+.footer__social img {
+    width: 20px;
+}
+.footer__telegram {
+    border: 2px solid #242530;
+    color: #242530;
+}
+.footer__whatsapp {
+    border: 2px solid #7AD06D;
+    color: #7AD06D;
 }
 .popup {
     background-color: #2425307c;

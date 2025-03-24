@@ -41,7 +41,7 @@ menuLinks.forEach(link => {
 });
 
 //swipper js
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
@@ -54,5 +54,18 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
   },
+});
+
+document.getElementById('open-python').addEventListener('click', function() {
+  let sidebar = document.getElementById('python-sidebar');
+  let overlay = document.getElementById('overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('active');
+});
+document.getElementById('overlay').addEventListener('click', function() {
+  let sidebar = document.getElementById('python-sidebar');
+  let overlay = document.getElementById('overlay');
+  sidebar.classList.remove('open');
+  overlay.classList.remove('active');
 });
 

@@ -61,11 +61,31 @@ document.getElementById('open-python').addEventListener('click', function() {
   let overlay = document.getElementById('overlay');
   sidebar.classList.toggle('open');
   overlay.classList.toggle('active');
+  document.body.classList.add('no-scroll');
+});
+document.getElementById('open-web').addEventListener('click', function() {
+  let sidebar = document.getElementById('web-sidebar');
+  let overlay = document.getElementById('overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('active');
+  document.body.classList.add('no-scroll');
 });
 document.getElementById('overlay').addEventListener('click', function() {
-  let sidebar = document.getElementById('python-sidebar');
+  let sidebar = document.querySelector('.sidebar.open');
   let overlay = document.getElementById('overlay');
   sidebar.classList.remove('open');
   overlay.classList.remove('active');
+  document.body.classList.remove('no-scroll');
+});
+Array.from(document.getElementsByClassName('sidebar__close')).forEach((el) => {
+  el.addEventListener('click', function() {
+    let sidebar = document.querySelector('.sidebar.open');
+    let overlay = document.getElementById('overlay');
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+})
+
+
 });
 

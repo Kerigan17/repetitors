@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="index.css">
     <title>School of programming</title>
 </head>
@@ -76,6 +75,10 @@
                         <p class="courses__desc">
                             Курс для творческих ребят, которые увлекаются программами и играми. Мы изучим циклы, условия, основные понятия и более сложные конструкции, а также научимся создавать программы/игры. Python - хороший старт благодаря его компактному и интуитивно понятному коду.
                         </p>
+                        <div class="courses__cost">
+                            <div class="courses__cost-bold">Стоимость:</div>
+                            <div>12$ / занятие</div>
+                        </div>
                         <div class="courses__btns">
                             <a class="courses__more" target="_blank" id="open-python">Подробнее</a>
                             <a class="courses__send sign_up">Записаться</a>
@@ -91,8 +94,12 @@
                         <p class="courses__desc">
                             Курс для создания сайтов и веб-приложений. Изучим HTML, CSS и JavaScript, чтобы создавать красивые и интерактивные страницы. Научимся работать с базами данных и делать проекты, которые работают в браузере. Веб-разработка — это твой шанс сделать что-то крутое и доступное для всех!
                         </p>
+                        <div class="courses__cost">
+                            <div class="courses__cost-bold">Стоимость:</div>
+                            <div>12$ / занятие</div>
+                        </div>
                         <div class="courses__btns">
-                            <a class="courses__more" href="#">Подробнее</a>
+                            <a class="courses__more" target="_blank" id="open-web">Подробнее</a>
                             <a class="courses__send sign_up">Записаться</a>
                         </div>
                     </div>
@@ -106,6 +113,10 @@
                         <p class="courses__desc">
                             Курс для создания игр и 3D-проектов. Изучим движок Unity и основы C# для программирования игровой логики. Научимся работать с анимациями, физикой и звуком, чтобы создавать уровни, персонажей и целые игры. Unity — это твой инструмент для воплощения игровых идей!
                         </p>
+                        <div class="courses__cost">
+                            <div class="courses__cost-bold">Стоимость:</div>
+                            <div>12$ / занятие</div>
+                        </div>
                         <div class="courses__btns">
                             <a class="courses__more" href="#">Подробнее</a>
                             <a class="courses__send sign_up">Записаться</a>
@@ -319,10 +330,230 @@
 
     <!--SIDEBAR-->
     <div id="overlay" class="overlay"></div>
-    <div id="python-sidebar" class="python-sidebar">
+    <div id="python-sidebar" class="python-sidebar sidebar">
+        <div class="sidebar__prev">
+            <div class="sidebar__left">
+                <h2 class="sidebar__title">Программирование на Python</h2>
+                <p class="sidebar__description">
+                    <span>Python</span> — это современный и простой в изучении язык программирования, который используется для создания программ, сайтов, игр, анализа данных и даже в робототехнике. Его часто выбирают для обучения детей, потому что он имеет понятный и лаконичный синтаксис, похожий на обычный язык.
+                </p>
+            </div>
+            <div class="sidebar__right">
+                <div class="sidebar__close">
+                    <img src="./src/img/close.svg" alt="">
+                </div>
+                <img src="./src/img/python-big.png" alt="Python image">
+            </div>
+        </div>
+        <div class="sidebar__lesson">
+            <p class="sidebar__name">Сколько длится занятие?</p><div>50 минут</div>
+        </div>
+        <div class="sidebar__skills">
+            <p class="sidebar__name">Что освоите: </p>
+            <div>
+                <div>Python основы</div>
+                <div>SQL</div>
+                <div>Pygame</div>
+                <div>Tkinter / TTK</div>
+                <div>Data Bases</div>
+                <div>Git</div>
+                <div>Git Hub</div>
+                <div>Telegram</div>
+                <div>Discord</div>
+                <div>API</div>
+            </div>
+        </div>
+        <div class="sidebar__themes">
+            <p class="sidebar__name">Темы курса:</p>
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Начальный уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>📚 Введение</li>
+                        <li>📦 Переменные</li>
+                        <li>⌨️ Ввод-вывод данных</li>
+                        <li>🔤 Работа со строками</li>
+                        <li>🤔 Условные операторы</li>
+                        <li>📋 Списки и кортежи</li>
+                        <li>🔄 Циклы</li>
+                        <li>🛠️ Функции</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ребенок познакомится с основами программирования, научится хранить данные в переменных и работать с вводом-выводом информации. Он освоит работу с текстом, научится принимать решения в программе на основе условий и работать с наборами данных. Ребенок узнает, как повторять действия без дублирования кода и создавать функции для многократного использования. Это поможет развить базовые навыки для решения задач.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Базовый уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>📚 Словари</li>
+                        <li>🧩 Множества</li>
+                        <li>🐢 Turtle</li>
+                        <li>🖼️ Tkinter. TTK</li>
+                        <li>📦 Модули и пакеты</li>
+                        <li>⚠️ Обработка исключений</li>
+                        <li>📄 Работа с документами</li>
+                        <li>📊 Работа с Json</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ребенок углубит свои знания в программировании, научится работать со словарями и множествами для хранения и обработки данных. Он освоит создание графики с помощью Turtle и разработку графических интерфейсов с использованием Tkinter. Ребенок узнает, как организовывать код в модули и пакеты, обрабатывать ошибки и исключения, а также работать с текстовыми файлами и данными в формате JSON. Эти навыки помогут ему решать более сложные задачи и создавать полноценные программы.
+                    </p>
+                </div>
+            </div>
 
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Средний уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>🏛️ Классы</li>
+                        <li>🔍 Регулярные выражения</li>
+                        <li>🔄 Методы сортировки</li>
+                        <li>🗃️ Базы данных MySQL</li>
+                        <li>🎮 Pygame</li>
+                        <li>🤖 Телеграмм боты</li>
+                        <li>🎧 Дискорд боты</li>
+                        <li>🌐 Сторонние API</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ученик научится работать с классами и объектами, использовать регулярные выражения для обработки текста и освоит методы сортировки данных. Он познакомится с базами данных MySQL, созданием игр на Pygame и разработкой ботов для Telegram и Discord. Ребенок также узнает, как взаимодействовать со сторонними API для получения и обработки данных. Эти навыки помогут ему создавать сложные и функциональные приложения.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__action">
+            <a class="courses__send sign_up">Записаться</a>
+        </div>
     </div>
+    <div id="web-sidebar" class="python-sidebar sidebar">
+        <div class="sidebar__prev">
+            <div class="sidebar__left">
+                <h2 class="sidebar__title">Создание сайтов.<br>Web-разработка</h2>
+                <p class="sidebar__description">
+                    <span>Создание сайтов (Web-разработка)</span> — это современное и востребованное направление, которое позволяет создавать интерактивные сайты, онлайн-магазины, веб-приложения и платформы. Веб-разработка идеально подходит для обучения, потому что сочетает в себе творчество и логику, а результаты работы можно сразу увидеть в браузере.
+                </p>
+            </div>
+            <div class="sidebar__right">
+                <div class="sidebar__close">
+                    <img src="./src/img/close.svg" alt="">
+                </div>
+                <img src="./src/img/web-big.png" alt="Web image">
+            </div>
+        </div>
+        <div class="sidebar__lesson">
+            <p class="sidebar__name">Сколько длится занятие?</p><div>50 минут</div>
+        </div>
+        <div class="sidebar__skills">
+            <p class="sidebar__name">Что освоите: </p>
+            <div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>SCSS</div>
+                <div>Flexbox</div>
+                <div>Grid Layout</div>
+                <div>Git</div>
+                <div>Bash</div>
+                <div>JavaScript</div>
+                <div>DOM</div>
+                <div>ООП</div>
+                <div>API</div>
+            </div>
+        </div>
+        <div class="sidebar__themes">
+            <p class="sidebar__name">Темы курса:</p>
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Начальный уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>🌐 Введение в веб-разработку</li>
+                        <li>📝 Основы HTML</li>
+                        <li>🎨 Основы CSS</li>
+                        <li>🏗️ Структура сайта</li>
+                        <li>📏 Flow layout</li>
+                        <li>📊 Таблицы</li>
+                        <li>✏️ Формы</li>
+                        <li>🖼️ Background</li>
+                        <li>📍 Позиционирование</li>
+                        <li>🛠️ Работа с Figma/Pixso</li>
+                        <li>🚀 Основы JS</li>
+                        <li>📦 Переменные</li>
+                        <li>➕ Операторы и выражения</li>
+                        <li>🔤 Работа со строками</li>
+                        <li>❓ Условные конструкции</li>
+                        <li>🔄 Циклы</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ученик освоит создание структуры сайтов на HTML (работа с тегами, формами, таблицами), научится оформлять страницы с помощью CSS (работа со шрифтами, цветами, позиционированием, фонами), поймёт принципы вёрстки (flow layout, адаптивность), освоит базовый JavaScript (переменные, операторы, условия, циклы, работа со строками), научится работать с дизайн-макетами в Figma/Pixso и создавать простые интерактивные элементы. На этом уровне он сможет верстать статичные сайты и добавлять им базовую логику.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Базовый уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>🎯 Flexbox</li>
+                        <li>🔲 Grid</li>
+                        <li>🎛️ Переменные в CSS</li>
+                        <li>✨ Псевдоклассы и псевдоэлементы</li>
+                        <li>🌌 Мультимедиа. Параллакс</li>
+                        <li>⚡ Анимация (CSS)</li>
+                        <li>📱 Адаптивная верстка</li>
+                        <li>🌍 Кроссбраузерная верстка</li>
+                        <li>🗃️ Массивы</li>
+                        <li>⚙️ Функции</li>
+                        <li>📦 Объекты</li>
+                        <li>🐞 Debug</li>
+                        <li>🌳 Введение в DOM</li>
+                        <li>🖱️ События</li>
+                        <li>🎮 Интерактивные элементы</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ученик освоит Flexbox для гибкой вёрстки, Grid для сложных сеток, CSS-переменные для удобного управления стилями. Научится использовать псевдоклассы для интерактивности и создавать CSS-анимации. Поймёт принципы адаптивной и кроссбраузерной вёрстки, включая работу с медиазапросами. В JS: изучит массивы, функции, объекты, отладку кода. Освоит работу с DOM, событиями и создание интерактивных элементов на странице. Научится реализовывать параллакс-эффекты и работать с мультимедиа.
+                    </p>
+                </div>
+            </div>
 
+            <div class="sidebar__card">
+                <div class="themes__header">
+                    <p>Средний уровень</p>
+                </div>
+                <div class="themes__content">
+                    <ol>
+                        <li>🧩 Методология БЭМ. Семантика</li>
+                        <li>✅ Валидация форм. Regex</li>
+                        <li>💾 Client-side storage</li>
+                        <li>🎬 Анимации (JS)</li>
+                        <li>🔗 Работа с API</li>
+                        <li>🖥️ Основы веб-приложений</li>
+                        <li>📤 Хостинг</li>
+                        <li>🔧 Работа с Git</li>
+                        <li>🎓 Итоговый проект</li>
+                    </ol>
+                    <p class="themes__description">
+                        Ученик освоит методологию БЭМ для организации кода и семантическую верстку, научится валидировать формы с помощью регулярных выражений (Regex), работать с локальным хранилищем (localStorage, cookies). Поймет, как создавать сложные анимации на JavaScript, взаимодействовать с API (отправка/получение данных). Изучит архитектуру веб-приложений, процесс размещения проектов на хостинге и основы работы с Git для контроля версий и командной разработки.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__action">
+            <a class="courses__send sign_up">Записаться</a>
+        </div>
+    </div>
 
 
     <div class="popup" id="popup">

@@ -14,12 +14,22 @@ signUpsBtns.forEach((item) =>{
 // закрытие на крестик
 popupClose.onclick = () => {
     popup.classList.remove('active');
+    let sidebar = document.querySelector('.sidebar.open');
+    let overlay = document.getElementById('overlay');
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
     removeRedBorder()
 }
 //закртие на фон
 popup.onclick = (event) => {
     if (event.target === popup) {
         popup.classList.remove('active');
+        let sidebar = document.querySelector('.sidebar.open');
+        let overlay = document.getElementById('overlay');
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
         removeRedBorder()
     }
 }

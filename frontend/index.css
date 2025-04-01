@@ -789,7 +789,10 @@ input.touched:invalid + .error-message {
     width: 40%;
 }
 .themes__content ol li {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    padding: 2px;
 }
 .themes__description {
     display: flex;

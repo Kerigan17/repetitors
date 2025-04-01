@@ -56,20 +56,28 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-document.getElementById('open-python').addEventListener('click', function() {
-  let sidebar = document.getElementById('python-sidebar');
-  let overlay = document.getElementById('overlay');
+function openSidebar(sidebar, overlay) {
   sidebar.classList.toggle('open');
   overlay.classList.toggle('active');
   document.body.classList.add('no-scroll');
+}
+
+document.getElementById('open-python').addEventListener('click', function() {
+  let sidebar = document.getElementById('python-sidebar');
+  let overlay = document.getElementById('overlay');
+  openSidebar(sidebar, overlay);
 });
 document.getElementById('open-web').addEventListener('click', function() {
   let sidebar = document.getElementById('web-sidebar');
   let overlay = document.getElementById('overlay');
-  sidebar.classList.toggle('open');
-  overlay.classList.toggle('active');
-  document.body.classList.add('no-scroll');
+  openSidebar(sidebar, overlay);
 });
+document.getElementById('open-unity').addEventListener('click', function() {
+  let sidebar = document.getElementById('unity-sidebar');
+  let overlay = document.getElementById('overlay');
+  openSidebar(sidebar, overlay);
+});
+
 document.getElementById('overlay').addEventListener('click', function() {
   let sidebar = document.querySelector('.sidebar.open');
   let overlay = document.getElementById('overlay');
@@ -77,6 +85,7 @@ document.getElementById('overlay').addEventListener('click', function() {
   overlay.classList.remove('active');
   document.body.classList.remove('no-scroll');
 });
+
 Array.from(document.getElementsByClassName('sidebar__close')).forEach((el) => {
   el.addEventListener('click', function() {
     let sidebar = document.querySelector('.sidebar.open');
@@ -84,8 +93,6 @@ Array.from(document.getElementsByClassName('sidebar__close')).forEach((el) => {
     sidebar.classList.remove('open');
     overlay.classList.remove('active');
     document.body.classList.remove('no-scroll');
-})
-
-
+  })
 });
 
